@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    height: 110vh;
+    display: grid;
+    background-color: #ff5200;
+    color: white;
+    position: relative;
+}
+nav {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 35% 45%;
+    place-content: center;
+}
+.nav_left img {
+    width: 160px;
+}
+.nav_right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_right a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+}
+.nav_right button {
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.nav_right .nav_home_signin {
+    background-color: black;
+    border: none;
+    padding: 15px 40px;
+}
+.nav_right button b {
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+}
+
+.home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55%;
+    place-content: center;
+    gap: 3vh;
+}
+.home h1 {
+    font-size: 280%;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.4;
+}
+.input_field {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+}
+.input_field span {
+    width: 100%;
+    height: 8vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+.input_field span b {
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 160%;
+}
+.input_field span input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 500;
+}
+.input_field span:last-of-type input {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.img_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_box img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.home > img {
+    width: 250px;
+    position: absolute;
+}
+.left_img {
+    left: 0;
+    top: 10%;
+}
+.right_img {
+    right: 0;
+    top: 10%;
+}
+
+/* ----------------------------food_types---------------------- */
+
+.food_types {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 80%;
+    place-content: center;
+}
+.type_scroll_btns {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1vw;
+}
+.type_scroll_btns button {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+.food_all_types {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: max-content;
+    overflow: auto;
+}
+.food_all_types::-webkit-scrollbar {
+    display: none;
+}
+.food_all_types img {
+    width: 170px;
+    cursor: pointer;
+}
+
+/* ------------------------restaurant_home---------------------- */
+
+.restaurant_home {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 80%;
+    place-content: center;
+    gap: 4vh;
+}
+.restaurant_scroll_btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.restaurant_scroll_btns h2 {
+    font-weight: bold;
+}
+.restaurant_scroll_btns span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.restaurant_scroll_btns button {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+.all_restaurants {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: max-content;
+    grid-auto-columns: 27%;
+    gap: 1.5vw;
+    overflow-x: auto;
+    background-color: #f8f8f9;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.all_restaurants::-webkit-scrollbar {
+    display: none;
+}
+.restaurant {
+    width: 100%;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 15px;
+    display: grid;
+    overflow: hidden;
+    background-color: white;
+}
+.img_part {
+    width: 100%;
+    height: 28vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: white;
+}
+.img_part div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.img_part h2 {
+    font-size: 130%;
+    font-weight: bold;
+}
+.img_part div b {
+    font-size: 120%;
+    color: #1ba672;
+}
+.details_part {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content: baseline;
+    padding: 15px 0;
+    box-sizing: border-box;
+    gap: 2vh;
+}
+.details_part div {
+    color: gray;
+}
+.details_part span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details_part span p {
+    font-size: 80%;
+}
+.rest_discount {
+    width: 100%;
+    padding: 7px 10px;
+    background-color: #1ba672;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 90%;
+}
+.rest_discount p {
+    display: flex;
+    align-items: center;
+    font-size: 90%;
+    gap: 5px;
+    font-weight: 500;
+}
+.rest_discount p b {
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+}
+.rest_offer {
+    width: 100%;
+    padding: 7px 10px;
+    background-color: #c8f9e5;
+    color: #1ba672;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.rest_offer p {
+    font-weight: 500;
+}
+.details_part span > b {
+    color: darkblue;
+    font-size: 80%;
+}
+
+.app_show {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-content: center;
+}
+.app_show img {
+    width: 100%;
+}
+
+/* -----------------------cities_with------------------ */
+
+.cities_with {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70%;
+    place-content: center;
+    padding: 10vh 0;
+    gap: 10vh;
+}
+.food_delivery {
+    width: 100%;
+    display: grid;
+    gap: 2vh;
+}
+.food_delivery h2 {
+    font-weight: bold;
+}
+.cities {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: max-content;
+    gap: 20px;
+}
+.city {
+    width: 100%;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city p {
+    font-size: 85%;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+}
+.grocery_delivery {
+    width: 100%;
+    display: grid;
+    gap: 2vh;
+}
+.grocery_delivery h2 {
+    font-weight: bold;
+}
+
+/* --------------------------contact--------------------- */
+
+.contact {
+    width: 100%;
+    height: 80vh;
+    background-color: #f0f0f5;
+    display: grid;
+    grid-template-columns: 70%;
+    place-content: center;
+}
