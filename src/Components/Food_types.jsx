@@ -35,6 +35,11 @@ function Food_types() {
                     <img src="Juice.avif" alt="" />
                     <img src="Dosa.avif" alt="" />
                     <img src="Pure Veg.avif" alt="" />
+                    <img src="Lassi.avif" alt="" />
+                    <img src="Pancake.avif" alt="" />
+                    <img src="Poha.avif" alt="" />
+                    <img src="Samosa.avif" alt="" />
+                    <img src="Desserts.avif" alt="" />
                 </div>
             </div>
         </>

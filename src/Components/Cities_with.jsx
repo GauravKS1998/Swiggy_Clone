@@ -8,9 +8,9 @@ function Cities_with() {
                 <div className="food_delivery">
                     <h2>Cities with food delivery</h2>
                     <div className="cities">
-                        {cities.map((city) => {
+                        {cities.map((city, index) => {
                             return (
-                                <div key={city.id} className="city">
+                                <div key={index} className="city">
                                     <p>Order food online in {city.name}</p>
                                 </div>
                             );
@@ -20,9 +20,9 @@ function Cities_with() {
                 <div className="grocery_delivery">
                     <h2>Cities with grocery delivery</h2>
                     <div className="cities">
-                        {cities.map((city) => {
+                        {cities.map((city, index) => {
                             return (
-                                <div key={city.id} className="city">
+                                <div key={index} className="city">
                                     <p>Order grocery delivery in {city.name}</p>
                                 </div>
                             );

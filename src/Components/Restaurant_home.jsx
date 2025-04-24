@@ -21,9 +21,9 @@ function Restaurant_home() {
                     </span>
                 </div>
                 <div className="all_restaurants">
-                    {restaurants.map((data) => {
+                    {restaurants.map((data, index) => {
                         return (
-                            <div key={data.id} className="restaurant">
+                            <div key={index} className="restaurant">
                                 <div
                                     className="img_part"
                                     style={{
