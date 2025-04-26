@@ -1,36 +1,52 @@
 import { b } from "framer-motion/client";
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import About_know_Mission from "./About_know_Mission";
+import About_know_Vision from "./About_know_Vision";
+import About_know_Values from "./About_know_Values";
 
-function About_know_us() {
-    let [isMission, setIsMission] = useState(false);
-    let [isVision, setIsVision] = useState(false);
-    let [isValues, setIsValues] = useState(false);
+function AboutKnowUs() {
+    const [activeTab, setActiveTab] = useState("Mission");
+
+    const tabContent = {
+        Mission: {
+            text: <About_know_Mission />,
+        },
+        Vision: {
+            text: <About_know_Vision />,
+        },
+        Values: {
+            text: <About_know_Values />,
+        },
+    };
+
     return (
-        <>
-            <div className="about_know_us">
-                <h1>
-                    <span></span>GET TO KNOW US<span></span>
-                </h1>
-                <div className="about_tab">
-                    <div className="about_tab_btns">
-                        <button onClick={() => setIsMission(true)}>
-                            {isMission
-                                ? "Mission"
-                                : `Mission(<FaArrowRight />)`}
+        <div className="about_know_us">
+            <h1>
+                <span></span>GET TO KNOW US<span></span>
+            </h1>
+            <div className="about_tab">
+                <div className="about_tab_btns">
+                    {["Mission", "Vision", "Values"].map((tab) => (
+                        <button
+                            key={tab}
+                            onClick={() => setActiveTab(tab)}
+                            className={activeTab === tab ? "active" : ""}
+                        >
+                            <span>
+                                <p>{tab}</p>
+                                <b>{activeTab === tab && <FaArrowRight />}</b>
+                            </span>
                         </button>
-                        <button onClick={() => setIsVision(true)}>
-                            {isVision ? "Vision" : `Vision(<FaArrowRight />)`}
-                        </button>
-                        <button onClick={() => setIsValues(true)}>
-                            {isValues ? "Values" : `Values(<FaArrowRight />)`}
-                        </button>
-                    </div>
-                    <div className="about_tab_info"></div>
+                    ))}
+                </div>
+
+                <div className="about_tab_info">
+                    <p>{tabContent[activeTab].text}</p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
-export default About_know_us;
+export default AboutKnowUs;

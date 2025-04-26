@@ -10,13 +10,11 @@ function Nav() {
 
     function moveRight() {
         setRight("0%");
-        console.log("right");
         setLogin(true);
     }
 
     function moveLeft() {
         setRight("-37%");
-        console.log("left");
         setLogin(false);
     }
 

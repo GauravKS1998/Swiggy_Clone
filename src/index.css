@@ -767,7 +767,7 @@ nav {
     display: grid;
     grid-template-columns: 78%;
     place-content: center;
-    gap: 5vh;
+    gap: 7vh;
 }
 .about_know_us h1 {
     font-size: 250%;
@@ -787,12 +787,13 @@ nav {
 .about_tab {
     width: 100%;
     display: grid;
-    grid-template-columns: 20% 70%;
+    grid-template-columns: 20% 75%;
     justify-content: space-between;
-    align-content: center;
+    align-content: baseline;
 }
 .about_tab_btns {
     width: 100%;
+    height: max-content;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 12vh 20vh 12vh;
@@ -810,7 +811,30 @@ nav {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+.about_tab_btns button span {
+    display: flex;
+    align-items: center;
     gap: 5px;
+}
+.about_tab_btns button b {
+    display: flex;
+    align-items: center;
+}
+.about_tab_btns button p {
+    transition: 0.5s ease;
+}
+.about_tab_btns button.active p {
+    color: #ff5c00;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.about_tab_btns button.active b {
+    color: #ff5c00;
+}
+.about_tab_btns button:hover p {
+    color: #ff5c00;
 }
 .about_tab_btns button:first-of-type {
     align-items: start;
@@ -821,6 +845,86 @@ nav {
 .about_tab_btns button:nth-of-type(2) {
     border-top: 1px solid #c3c3c3;
     border-bottom: 1px solid #c3c3c3;
+}
+.about_tab_info {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+/* --------------------about_know_mission---------------- */
+
+.about_know_mission {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+}
+.about_know_mission p {
+    font-size: 105%;
+    font-weight: 500;
+    color: #676a6d;
+}
+.about_know_mission img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+.about_know_mission img:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------about_know_vision--------------------- */
+
+.about_know_vision {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.about_know_vision iframe {
+    width: 686px;
+    height: 386px;
+    border-radius: 40px;
+    box-shadow: 0px 1px 3px gray;
+}
+
+/* ----------------------about_know_values-------------------- */
+
+.about_know_values {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 48%;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_know_values span {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    gap: 5vh;
+}
+.about_know_values span p {
+    font-size: 105%;
+    font-weight: 500;
+    color: #676a6d;
+}
+.about_know_values iframe {
+    width: 100%;
+    border-radius: 40px;
+}
+.about_know_values span button {
+    justify-self: baseline;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 100%;
+    font-weight: 600;
+    background-color: #ff5200;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 /* ----------------------error_page--------------------- */
@@ -834,7 +938,7 @@ nav {
 .error_page button {
     width: 100%;
     height: 6vh;
-    background-color: red;
+    background-color: #ff5200;
     color: white;
     border: none;
     outline: none;
@@ -959,4 +1063,555 @@ nav {
 }
 .about_number_count {
     width: 100%;
+}
+
+/* --------------------about_swiggyJourney---------------- */
+
+.about_swiggyJourney {
+    padding: 10vh 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    place-content: center;
+    gap: 8vh;
+    background-color: #161a1f;
+    color: white;
+    position: relative;
+}
+.about_swiggyJourney > h1 {
+    font-size: 250%;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff5200;
+    gap: 10px;
+}
+.about_swiggyJourney > h1 span {
+    width: 60px;
+    height: 2px;
+    background-color: white;
+}
+.swiggy_yearRecord {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 47%;
+    place-content: center;
+    overflow: auto;
+    gap: 3vw;
+}
+.swiggy_yearRecord::-webkit-scrollbar {
+    display: none;
+}
+.year_record {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    gap: 0vh;
+}
+.year_record h1 {
+    color: #343d49;
+    text-align: center;
+    font-size: 550%;
+    font-weight: 900;
+    font-style: italic;
+}
+.record_box {
+    width: 100%;
+    height: 40vh;
+    border: 2px solid #38424f;
+    border-radius: 40px;
+    background: linear-gradient(
+        180deg,
+        rgba(22, 26, 32, 1) 0%,
+        rgba(32, 38, 45, 1) 50%,
+        rgba(41, 49, 59, 1) 100%
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px 0px 90px;
+    box-sizing: border-box;
+    position: relative;
+    top: -3vh;
+    gap: 3vw;
+}
+.record_box ul {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    font-size: 140%;
+    gap: 2vh;
+}
+.record_box ul li {
+    /* display: flex; */
+    align-items: center;
+}
+.record_box ul li::marker {
+    content: "✦ ";
+    font-size: 180%;
+}
+.record_box img {
+    width: 120px;
+}
+
+.journey_slide_btn {
+    position: absolute;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    top: 31vh;
+}
+.journey_slide_btn button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5f63;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+/* --------------------about_team----------------------- */
+
+.about_team {
+    width: 100%;
+    padding: 12vh 0;
+    display: grid;
+    grid-template-columns: 78%;
+    place-content: center;
+    gap: 6vh;
+}
+.about_team_btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team_switch_btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.team_switch_btns button {
+    padding: 17px 30px;
+    border-radius: 40px;
+    font-size: 120%;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid #c3c3c3;
+    color: gray;
+    outline: none;
+    cursor: pointer;
+}
+.team_switch_btns button.active {
+    background-color: #ff5200;
+    border: 1px solid #ff5200;
+    color: white;
+}
+.team_slide_btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.team_slide_btns button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9dadb;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.team_members {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 27%;
+    gap: 35px;
+    overflow: auto;
+}
+.team_members::-webkit-scrollbar {
+    display: none;
+}
+.member_box {
+    width: 100%;
+    display: grid;
+    gap: 3vh;
+    align-content: baseline;
+}
+.member_box img {
+    width: 100%;
+}
+.member_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3vw;
+}
+.member_info span {
+    width: 100%;
+    display: grid;
+}
+.member_info h3 {
+    font-size: 130%;
+    color: #414449;
+    font-weight: 600;
+}
+.member_info p {
+    font-size: 110%;
+    color: #8d8f91;
+    font-weight: 500;
+}
+.member_info button {
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5f63;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+/* --------------------about_careers----------------------- */
+
+.about_careers {
+    padding: 11vh 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 78%;
+    place-content: center;
+    gap: 8vh;
+}
+.about_careers > h1 {
+    font-size: 250%;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #414449;
+    gap: 10px;
+}
+.about_careers > h1 span {
+    width: 50px;
+    height: 2px;
+    background-color: #ff5200;
+}
+
+.career_info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: baseline;
+    gap: 3vw;
+}
+.career_info span {
+    width: 100%;
+    display: grid;
+    gap: 3vh;
+}
+.career_info span p {
+    font-size: 105%;
+    font-weight: 500;
+    color: gray;
+}
+.career_info span button {
+    justify-self: baseline;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 100%;
+    font-weight: 600;
+    background-color: #ff5200;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.career_img {
+    width: 100%;
+    height: max-content;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.career_img img {
+    width: 100%;
+    transition: 0.3s ease;
+}
+.career_img img:hover {
+    transform: scale(1.06);
+}
+
+/* ---------------------about_hr---------------------- */
+
+.about_hr {
+    width: 90%;
+    height: 1px;
+    justify-self: center;
+    background-color: #d9dadb;
+    border: none;
+}
+
+/* ---------------------about_blog---------------------- */
+
+.about_blog {
+    padding: 10vh 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 78%;
+    place-content: center;
+    gap: 6vh;
+}
+.about_blog_head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about_blog_head > h1 {
+    font-size: 250%;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #414449;
+    gap: 10px;
+}
+.about_blog_head > h1 span {
+    width: 60px;
+    height: 2px;
+    background-color: #ff5200;
+}
+.blog_slide_btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+}
+.blog_slide_btns button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f5;
+    color: #b8b9ba;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.about_all_blogs {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1.2vw;
+}
+.about_single_blog {
+    width: 100%;
+    display: grid;
+    align-content: start;
+    border: 1px solid #b3b4b6;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.about_single_blog img {
+    width: 100%;
+}
+.about_blog_info {
+    padding: 20px 0;
+    width: 100%;
+    height: 31vh;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content: space-between;
+    color: #414449;
+}
+.about_blog_info span {
+    width: 100%;
+    display: grid;
+    gap: 2vh;
+}
+.about_blog_info span p {
+    font-size: 90%;
+    font-weight: 300;
+}
+.about_blog_info span h3 {
+    font-size: 125%;
+    font-weight: 700;
+}
+.about_blog_info button {
+    justify-self: baseline;
+    align-self: flex-end;
+    padding: 11px 15px;
+    border-radius: 10px;
+    font-size: 85%;
+    font-weight: 600;
+    background-color: #ffeee5;
+    color: #ff5200;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.about_blog > button {
+    justify-self: center;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 100%;
+    font-weight: 600;
+    background-color: #ff5200;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* --------------------about_get_app---------------------- */
+
+.about_get_app {
+    padding-top: 5vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 46% 32%;
+    justify-content: center;
+    align-content: end;
+    background-color: #161a1f;
+    color: white;
+}
+.about_get_app > img {
+    width: 100%;
+}
+.get_app_text {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    gap: 4vh;
+}
+.get_app_text img {
+    width: 110px;
+}
+.get_app_text span {
+    width: 100%;
+    display: grid;
+    gap: 2vh;
+}
+.get_app_text span h1 {
+    font-size: 240%;
+    font-weight: bold;
+}
+.get_app_text span p {
+    font-size: 110%;
+    color: #7a7d80;
+}
+
+/* ---------------------about_getInTouch-------------------- */
+
+.about_getInTouch {
+    width: 100%;
+}
+.about_getInTouch {
+    padding: 10vh 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 78%;
+    place-content: center;
+    gap: 5vh;
+}
+.about_getInTouch > h1 {
+    font-size: 250%;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #414449;
+    gap: 10px;
+}
+.about_getInTouch > h1 span {
+    width: 70px;
+    height: 2px;
+    background-color: #ff5200;
+}
+
+.getInTouch_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    align-content: start;
+}
+.getInTouch_address {
+    width: 100%;
+    display: grid;
+    align-content: start;
+    gap: 10vh;
+}
+.getInTouch_address div {
+    width: 100%;
+    display: grid;
+    gap: 1vh;
+}
+.getInTouch_address div h3 {
+    font-size: 130%;
+    font-weight: 600;
+    color: #414449;
+}
+.getInTouch_address div p {
+    font-size: 95%;
+    color: #8d8f91;
+}
+.getInTouch_map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px gray;
+}
+.getInTouch_map iframe {
+    width: 100%;
+    height: 355px;
+    border: none;
+}
+
+/* ----------------------about_contact--------------------- */
+
+.about_third_col,
+.about_final_col {
+    width: 100%;
+    display: grid;
+    gap: 3vh;
 }

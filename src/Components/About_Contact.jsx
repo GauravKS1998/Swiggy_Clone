@@ -5,9 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { Link } from "react-router";
 
-function Contact() {
+function About_Contact() {
     return (
         <>
             <div className="contact">
@@ -20,17 +19,15 @@ function Contact() {
                         <div className="company_col con_cols">
                             <h3>Company</h3>
                             <a href="#">About Us</a>
-                            <Link to="/swiggy_corporate">Swiggy Corporate</Link>
+                            <a href="#">Investor Relations</a>
                             <a href="#">Careers</a>
                             <a href="#">Team</a>
                             <a href="#">Swiggy One</a>
                             <a href="#">Swiggy Instamart</a>
                             <a href="#">Swiggy Dineout</a>
                             <a href="#">Swiggy Genie</a>
-                            <a href="#">Minis</a>
-                            <a href="#">Pyng</a>
                         </div>
-                        <div className="third_col">
+                        <div className="about_third_col">
                             <div className="contact_col con_cols">
                                 <h3>Contact Us</h3>
                                 <a href="#">Help & Support</a>
@@ -53,13 +50,13 @@ function Contact() {
                             <a href="#">Mumbai</a>
                             <a href="#">Pune</a>
                             <button>
-                                685 cities
+                                679 cities
                                 <b>
                                     <IoIosArrowDown />
                                 </b>
                             </button>
                         </div>
-                        <div className="final_col">
+                        <div className="about_final_col">
                             <div className="life_col con_cols">
                                 <h3>Life at Swiggy</h3>
                                 <a href="#">Explore With Swiggy</a>
@@ -100,4 +97,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default About_Contact;
