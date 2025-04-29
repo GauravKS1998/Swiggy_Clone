@@ -31,7 +31,7 @@ function AboutKnowUs() {
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={activeTab === tab ? "active" : ""}
+                            className={activeTab === tab ? "activeTab" : ""}
                         >
                             <span>
                                 <p>{tab}</p>

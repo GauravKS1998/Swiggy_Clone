@@ -6,7 +6,7 @@ function About_Nav() {
     return (
         <>
             <div className="about_nav">
-                <img src="Swiggy_about.png" alt="" />
+                <img src="/Swiggy_about.png" alt="" />
                 <div className="about_nav_right">
                     <NavLink to="/swiggy_corporate" activeClassName="active">
                         About Swiggy
@@ -14,7 +14,9 @@ function About_Nav() {
                     <NavLink to="/swiggy_corporate/our_businesses">
                         Our Businesses
                     </NavLink>
-                    <a href="#">Delivering For Everyone</a>
+                    <NavLink to="/swiggy_corporate/delivering_for_everyone">
+                        Delivering For Everyone
+                    </NavLink>
                     <a href="#">Newsroom</a>
                     <span>
                         <a href="#">Investor Relations</a>
@@ -22,8 +24,12 @@ function About_Nav() {
                             <TiArrowSortedDown />
                         </b>
                     </span>
-                    <a href="#">Sustainability</a>
-                    <a href="#">Contact Us</a>
+                    <NavLink to="/swiggy_corporate/sustainability">
+                        Sustainability
+                    </NavLink>
+                    <NavLink to="/swiggy_corporate/contact_us">
+                        Contact Us
+                    </NavLink>
                 </div>
             </div>
         </>

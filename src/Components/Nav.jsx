@@ -11,6 +11,7 @@ function Nav() {
     function moveRight() {
         setRight("0%");
         setLogin(true);
+        document.body.style.overflowY = "hidden";
     }
 
     function moveLeft() {

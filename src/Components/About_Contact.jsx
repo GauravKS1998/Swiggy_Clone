@@ -12,7 +12,7 @@ function About_Contact() {
             <div className="contact">
                 <div className="contact_top">
                     <div className="logo_col">
-                        <img src="Swiggy.svg" alt="" />
+                        <img src="/Swiggy.svg" alt="" />
                         <p>© 2025 Swiggy Limited</p>
                     </div>
                     <div className="contact_top_right">
@@ -89,8 +89,8 @@ function About_Contact() {
                 <hr />
                 <footer>
                     <h2>For better experience, download the Swiggy app now</h2>
-                    <img src="app_store.avif" alt="" />
-                    <img src="google_play.avif" alt="" />
+                    <img src="/app_store.avif" alt="" />
+                    <img src="/google_play.avif" alt="" />
                 </footer>
             </div>
         </>

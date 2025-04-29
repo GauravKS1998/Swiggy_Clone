@@ -1,0 +1,56 @@
+[
+    {
+        "img": "/swiggy_food.webp",
+        "title": "Swiggy Food",
+        "content": "On our Food Delivery marketplace, users can conveniently search and discover multiple restaurant listings, browse their menus, place food orders, pay seamlessly, and track order deliveries. These orders are received and prepared by our restaurant partners and delivered to users through the large fleet of delivery partners on our platform.",
+        "button": "Place your order here",
+        "max_width": "160px",
+        "bottom": "130%",
+        "grid_template_rows": "8vh max-content 1fr"
+    },
+    {
+        "img": "/swiggy_instamart.webp",
+        "title": "Swiggy Instamart​",
+        "content": "On Instamart, users can access and browse a wide selection of grocery and household items. These orders are received by merchant partners, processed through our dark stores, and delivered to users through delivery partners.",
+        "button": "Place your order here",
+        "max_width": "108px",
+        "bottom": "140%",
+        "grid_template_rows": "8vh max-content 1fr"
+    },
+    {
+        "img": "/swiggy_dineout.webp",
+        "title": "Swiggy Dineout",
+        "content": "Dineout facilitates a user’s eating-out experience, through which users can discover restaurants, access menus and images, make reservations, benefit from attractive promotions, and make digital payments to such restaurants on our platform.",
+        "button": "Click here to make reservations",
+        "max_width": "130px",
+        "bottom": "120%",
+        "grid_template_rows": "8vh max-content 1fr"
+    },
+    {
+        "img": "/swiggy_genie.webp",
+        "title": "Swiggy Genie",
+        "content": "Genie is an on-demand product pick-up/ drop-off service for users. This service is availed by a user for sending a product from one point to another within a city.",
+        "button": "Know more",
+        "max_width": "135px",
+        "bottom": "150%",
+        "grid_template_rows": "10vh max-content 1fr"
+    },
+    {
+        "img": "/swiggy_minis.webp",
+        "title": "Swiggy Minis",
+        "content": "Swiggy Minis is a direct-to-consumer offering where local homegrown brands can establish their own mini-storefront on our platform, engage with a broader user base and benefit from our technology-enabled logistics capabilities and back-end services such as discovery, check-out and payment.",
+        "button": "Know more",
+        "max_width": "210px",
+        "bottom": "160%",
+        "grid_template_rows": "10vh max-content 1fr"
+    },
+    {
+        "img": "/lynks_logistics.png",
+        "title": "Lynks Logistics",
+        "content": "Lynks is engaged in the business of, inter alia, organisation and transport of goods, providing facilities for design and development of systems to manage such transportation and maintenance of a market on the internet for purpose of providing a platform for transports to avail such transportation services.",
+        "button": "Know more",
+        "max_width": "210px",
+        "bottom": "150%",
+        "grid_template_rows": "10vh max-content 1fr"
+    }
+]

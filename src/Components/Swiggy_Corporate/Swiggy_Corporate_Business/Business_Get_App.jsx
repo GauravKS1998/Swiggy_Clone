@@ -1,6 +1,6 @@
 import React from "react";
 
-function About_Get_app() {
+function Business_Get_App() {
     return (
         <>
             <div className="get_app">
@@ -20,4 +20,4 @@ function About_Get_app() {
     );
 }
 
-export default About_Get_app;
+export default Business_Get_App;

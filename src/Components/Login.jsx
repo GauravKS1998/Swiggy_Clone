@@ -7,13 +7,14 @@ function Login(prop) {
     function close() {
         setRight("-37%");
         setLogin(false);
+        document.body.style.overflowY = "scroll";
     }
 
     return (
         <>
             <div
                 className="login_slide"
-                style={{ right: value, transition: "right .5s linear" }}
+                style={{ right: value, transition: "right .3s linear" }}
             >
                 <b onClick={close}>
                     <RxCross1 />
